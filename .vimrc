@@ -1,13 +1,10 @@
 " Specify a directory for plugins 
 call plug#begin('~/.vim/plugged')
-"  "以安装ycm插件为例
 Plug 'Valloric/YouCompleteMe'
 Plug 'w0rp/ale'
 Plug 'universal-ctags/ctags'
 Plug 'octol/vim-cpp-enhanced-highlight'
-"   " Initialize plugin system
 call plug#end()
-"
 "YCM
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_show_diagnostics_ui = 0
@@ -47,8 +44,7 @@ let g:ale_cpp_cppcheck_options = ''
 
 "
 set nu
-"set foldmethod=indent
-
+set t_Co=256
 
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
